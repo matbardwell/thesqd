@@ -1,0 +1,590 @@
+/*
+ Theme Name: Workmanship Websites
+ Theme URI: https://workmanshipwebsites.com
+ Description: Workmanship Websites Theme
+ Author: Workmanship Websites
+ Author URI: https://workmanshipwebsites.com
+ Template: Divi
+ Version: 1.0.0
+*/
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+:root {
+	--blue: #59656d;
+	--black: #2d3337;
+	--white: #f9f9fa;
+	--green: #497f75;
+	--yellow: #c4a862;
+	--heading_font: 'Castoro', Georgia, "Times New Roman", serif;
+	--body_font: 'Carlito', Helvetica, Arial, Lucida, sans-serif;
+}
+
+body {
+    display: none;
+}
+
+body p, body ol, body ul {
+	line-height: 1.45em !important;
+}
+
+.line-length-66, p, li {
+    max-width: 66ch; /* limits line length to about 66 characters*/
+}
+
+.et-menu a:hover {
+    opacity: 1;
+}
+
+.et_pb_menu--with-logo .et_pb_menu__menu>nav>ul>li>a {
+	padding: 20px 0;
+}
+
+/*** Gravity Forms ***/
+/*********************/
+
+/** Newsletter Form **/
+/* Name Field */
+#input_1_1_3 {
+	border: none;
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+}
+/* Email Field */
+#input_1_2 {
+	border: none;
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_1_2 {
+		margin-top: -16px;
+	}
+}
+
+/* Confirmation Message 1 */
+#gform_confirmation_message_1 {
+	color: var(--white);
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;
+	padding: 15px 15px 15px 30px;
+}
+
+/* Submit Button */
+#gform_submit_button_1 {
+	border: none;
+	border-radius: 0px;
+	background-color: var(--white);
+	color: var(--blue);
+	padding: 12px 17px 12px 16px;
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 20px;
+	transition: all 300ms ease 0ms;
+}
+
+#gform_submit_button_1:hover {
+	transform: scale(0.95);
+	transform-origin: center;
+}
+
+/** Contact Form **/
+/* Name Field */
+#input_2_1_3, #input_2_1_6 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+}
+/* Email Field */
+#input_2_2 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+	margin-top: -10px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_2_2 {
+		margin-top: -28px;
+	}
+}
+
+/* Question Field */
+#input_2_3 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 5px 12px 20px 15px;
+	margin-top: -10px;
+	margin-bottom: 9px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_2_3 {
+		margin-top: -28px;
+	}
+}
+
+/* Submit Button 2 */
+#gform_submit_button_2 {
+	border: 2px solid var(--green);
+	border-radius: 0px;
+	background-color: var(--green);
+	color: var(--white);
+	padding: 12px 17px 12px 16px;
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 20px;
+	transition: all 300ms ease 0ms;
+	margin-bottom: 7px;
+}
+
+#gform_submit_button_2:hover {
+	transform: scale(0.95);
+	transform-origin: center;
+}
+
+@media screen and (max-width: 529px) {
+	#gform_submit_button_2 {
+		margin-bottom: 9px;
+	}
+}
+
+/* Confirmation Message 2 */
+#gform_confirmation_message_2 {
+	color: var(--black);
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;
+	/* padding: 15px 15px 15px 30px; */
+}
+
+/* Name Field */
+#input_3_1_3, #input_3_1_6 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+}
+/* Email Field */
+#input_3_2 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+	margin-top: -10px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_3_2 {
+		margin-top: -28px;
+	}
+}
+
+/* Link to Current Website */
+#input_3_9 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+	margin-top: -10px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_3_9 {
+		margin-top: -28px;
+	}
+}
+
+/* Tell us about your website. */
+#input_3_6 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 5px 12px 20px 15px;
+	margin-top: -10px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_3_6 {
+		margin-top: -28px;
+	}
+}
+
+/* How did you hear about us? */
+#input_3_10 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 5px 12px 20px 15px;
+	margin-top: -10px;
+	margin-bottom: -21px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_3_10 {
+		margin-top: -28px;
+	}
+}
+
+/* Which website option are you interested in? */
+.gfield_label.gform-field-label {
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 529px) {
+	.gfield_label.gform-field-label {
+		font-size: 18px;
+	}
+}
+.gfield_required {
+	display: none;
+}
+
+/* Options - Which website option are you interested in? */
+#label_3_12_0, #label_3_12_1 {
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 20px;
+	margin-top: -5px;
+}
+
+@media screen and (max-width: 529px) {
+	#label_3_12_0, #label_3_12_1 {
+		font-size: 18px;
+	}
+}
+
+/* Radio Buttons - Which website options are you interested in? */
+#choice_3_12_0, #choice_3_12_1 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;
+    background-color: var(--white);
+}
+
+/* When would you like to launch your website? */
+#input_3_11 {
+	border: 2px solid var(--blue);
+	border-radius: 0px;				
+	background-color: var(--white);		
+	color: var(--blue);		
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 16px;
+	padding: 22px 12px 20px 15px;
+	margin-top: -17px;
+	margin-bottom: 6px;
+}
+
+@media screen and (max-width: 529px) {
+	#input_3_11 {
+		margin-top: -11px;
+	}
+}
+
+/* Submit Button 3 */
+#gform_submit_button_3 {
+	border: 2px solid var(--green);
+	border-radius: 0px;
+	background-color: var(--green);
+	color: var(--white);
+	padding: 12px 17px 12px 16px;
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;		
+	font-size: 20px;
+	transition: all 300ms ease 0ms;
+	margin-bottom: 13px;
+}
+
+#gform_submit_button_3:hover {
+	transform: scale(0.95);
+	transform-origin: center;
+}
+
+@media screen and (max-width: 529px) {
+	#gform_submit_button_3 {
+		margin-bottom: 9px;
+	}
+}
+
+/* Confirmation Message 3 */
+#gform_confirmation_message_3 {
+	color: var(--black);
+	font-family: 'Carlito', Helvetica, Arial, Lucida, sans-serif;
+	/* padding: 15px 15px 15px 30px; */
+}
+
+/*** End Gravity Forms ***/
+/*************************/
+
+
+/**** Header Menu ****/
+/*********************/
+
+.et_pb_menu_0_tb_header.et_pb_menu nav>ul>li>a:hover {
+    opacity: 1;
+}
+
+/* Get Started Button */
+#menu-header-menu li:last-child a {
+    background-color: var(--green) !important;
+	border: 2px solid var(--green) !important;
+	color: var(--white) !important;
+	padding: 0px 15px;
+	transition: all 300ms ease 0ms;
+}
+
+#menu-header-menu li:last-child a:hover {
+    transform: scale(0.95);
+	transform-origin: center;
+}
+
+#menu-header-menu li:last-child {
+	margin-top: 26px;
+    margin-bottom: 25px;
+	margin-left: 0px;
+}
+
+/* Client Portal Button */
+#menu-header-menu li:nth-child(3) a {
+    background-color: transparent !important;
+	color: var(--green) !important;
+	border: 2px solid var(--green) !important;
+	padding: 0px 15px;
+	transition: all 300ms ease 0ms;
+}
+
+#menu-header-menu li:nth-child(3) a:hover {
+    transform: scale(0.95);
+	transform-origin: center;
+}
+
+#menu-header-menu li:nth-child(3) {
+	margin-top: 29px;
+    margin-bottom: 28px;
+	margin-left: 0px;
+}
+
+/* Menu Height */
+.et_pb_menu_inner_container.clearfix {
+	height: 95px;
+}
+
+/** End Header Menu **/
+/*********************/
+
+/** Header Menu Home */
+/*********************/
+
+/* Get Started Button */
+#menu-header-menu-home li:last-child a {
+	background-color: var(--green) !important;
+	border: 2px solid var(--green) !important;
+	color: var(--white) !important;
+	padding: 0px 15px;
+	transition: all 300ms ease 0ms;
+	}
+	
+#menu-header-menu-home li:last-child a:hover {
+	transform: scale(0.95);
+	transform-origin: center;
+}
+
+#menu-header-menu-home li:last-child {
+	margin-top: 26px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+}
+
+/* Client Portal Button */
+#menu-header-menu-home li:nth-child(3) a {
+	background-color: transparent !important;
+	color: var(--white) !important;
+	border: 2px solid var(--white) !important;
+	padding: 0px 15px;
+	transition: all 300ms ease 0ms;
+}
+
+#menu-header-menu-home li:nth-child(3) a:hover {
+	transform: scale(0.95);
+	transform-origin: center;
+}
+
+#menu-header-menu-home li:nth-child(3) {
+	margin-top: 29px;
+	margin-bottom: 28px;
+	margin-left: 0px;
+}
+
+/* Menu Height */
+.et_pb_menu_inner_container.clearfix {
+	height: 95px;
+}
+
+/* End Header Menu Home */
+/************************/
+
+/* WYSIWYG Buttons */
+/*******************/
+
+.wysiwyg_btn_blue a {
+	display: inline-block; /* Ensures `transform` works */
+	background-color: var(--blue);
+	border: 2px solid var(--blue);
+	color: var(--white);
+	padding: 7px 15px 8px;
+	transition: all 300ms ease 0ms;
+}
+
+.wysiwyg_btn_blue a:hover {
+	transform: scale(0.95);
+	transform-origin: center;
+}
+
+/* End WYSIWYG Buttons */
+/*******************/
+
+/* Cookie Consent Modal */
+.bNzBvs {
+	border-radius: 0px !important;
+}
+/* End Cookie Consent Modal */
+
+/* Logos Bible Ref */
+a.rtBibleRef {
+	border-bottom: 1px dashed var(--yellow);
+}
+
+.rtTooltipMoreLink {
+    color: var(--yellow) !important;
+}
+
+.rtTooltipBody .ch-ref {
+    font-weight: 400;
+	font-size: 16px;
+}
+
+a.rtBibleRef .rtBibleRefNone {
+	border-bottom: none;
+	color: var(--white);
+}
+/* End Logos Bible Ref */
+
+@media screen and (max-width: 529px) {
+	.mobile_nav {
+		margin-top: -150px;
+		margin-left: 300px;
+	}
+}
+
+@media screen and (max-width: 599px) and (min-width: 530px) {
+	.mobile_nav {
+		margin-top: -24%;
+		margin-left: 450px;
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+	.mobile_nav {
+		margin-top: -22%;
+		margin-left: 500px;
+	}
+}
+
+@media screen and (max-width: 980px) and (min-width: 768px) {
+	.mobile_nav {
+		margin-top: -10%;
+		margin-left: 500px;
+	}
+}
+
+/* Nav Dropdown Backgroun Color and Border-Top Color */
+
+.nav li ul {
+    background: var(--white);
+    border-top: 3px solid var(--green) !important;
+}
+
+/**** Mobile Menu ****/
+/*********************/
+
+/* Mobile Menu Location and Border-Top Color */
+.et_mobile_menu {
+	top: 80px !important;
+	border-top: 3px solid var(--green);
+}
+
+/*change Divi hamburger menu to X*/
+.mobile_nav.opened .mobile_menu_bar:before {
+    content: '\4d';
+}
+
+/*rotate the Divi Menu icon on click*/
+
+.mobile_menu_bar:before {
+	transition: all .4s ease;
+	transform: rotate(0deg);
+	display: block;
+}
+
+
+/*rotate the Divi Menu icon on click*/
+
+.mobile_nav.opened .mobile_menu_bar::before {
+	transition: all .4s ease;
+	transform: rotate(90deg);
+	display: block;
+}
+
+.et_mobile_menu li a {
+    color: var(--black);
+}
+
+#menu-header-menu-home .et_pb_menu_1_tb_header .mobile_nav .mobile_menu_bar:before {
+	color: var(--white) !important;	
+}
+
+#footer-menu .et_mobile_nav_menu {
+    display: none;
+}
+
+#footer-menu .et_pb_menu__menu {
+        display: block;
+}
+
+/** End Mobile Menu **/
+/*********************/
+
+#main-content {
+    background-color: var(--white);
+}
